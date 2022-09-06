@@ -27,7 +27,6 @@ const Checkout = () => {
   const totalAmount = cartTotalAmount + Number(shippingCost);
 
   const cartItems = useSelector((state) => state.cart.cartItems);
-  // const totalAmount = useSelector((state) => state.cart.totalAmount);
 
   const dispatch2 = useNotification();
   const handleNewNotification = (info, message) => {
