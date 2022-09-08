@@ -18,6 +18,10 @@
 - Awesome modern minimalist UI
 - Payment via MetaMask
 
+### Recommended network:
+Goerli 
+---
+
 ### Technologies Used:
 
 ---
