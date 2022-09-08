@@ -1,4 +1,4 @@
-## Food Ordering App
+## Shopweb3 is a food ordering app
 
 ### Features:
 
@@ -11,9 +11,12 @@
 - Product Filtering functionality
 - Product page
 - Cart and checkout page
+- order page
 - Contact page
 - Login and Register page
+- Connect button from web3uiKit
 - Awesome modern minimalist UI
+- Payment via MetaMask
 
 ### Technologies Used:
 
@@ -23,20 +26,27 @@
 2. Redux Toolkit
 3. ReactStrap
 4. CSS
+5. Ethers.js
+6. Solidity
+7. web3Uikit
+
+Solidity link 
+---
+https://github.com/5h3d/web3Project-Shopweb3-solidity/blob/main/shopweb3.sol
 
 ### How to start?
 
 ---
 
-##### To start the project along with me just download the start-up file and run available script
+
 
 ```javascript
 // first install all necessary dependencies
 
-npm i
+yarn 
 
 // next run
 
-npm start
+yarn start
 
 ```
