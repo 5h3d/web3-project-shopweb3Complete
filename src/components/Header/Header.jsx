@@ -9,6 +9,8 @@ import { cartUiActions } from "../../store/shopping-cart/cartUiSlice";
 
 import "../../styles/header.css";
 import { ConnectButton } from "@web3uikit/web3";
+import { ethers } from "ethers";
+
 
 const nav__links = [
   {
@@ -33,7 +35,19 @@ const nav__links = [
   },
 ];
 
+
+
 const Header = () => {
+
+
+  useEffect(()=>{
+    if( window.ethereum.selectedAddress && parseInt(window.ethereum.chainId) != 5){
+      alert("Goerli network is required")
+    }
+   
+      
+    
+  },[])
   const menuRef = useRef(null);
   const headerRef = useRef(null);
   const totalQuantity = useSelector((state) => state.cart.totalQuantity);
@@ -91,12 +105,12 @@ const Header = () => {
               <i class="ri-shopping-basket-line"></i>
               <span className="cart__badge">{totalQuantity}</span>
             </span>
-
+{/* 
             <span className="user">
               <Link to="/login">
                 <i class="ri-user-line"></i>
               </Link>
-            </span>
+            </span> */}
 
             <span className="mobile__menu" onClick={toggleMenu}>
               <i class="ri-menu-line"></i>
